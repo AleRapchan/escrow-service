@@ -1,8 +1,8 @@
 # Escrow Smart Contract
 Design Patterns for Blockchain
 
-![Logo](http://alexandrebarros.com/global/escrow.png)
-
+<p align="center">![Logo](http://alexandrebarros.com/global/escrow.png)</p>
+  
 # About Escrow Pattern
 
 An escrow is an arrangement for a third party to hold the
