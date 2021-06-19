@@ -1,7 +1,9 @@
 # Escrow Smart Contract
 Design Patterns for Blockchain
 
-<p align="center">![Logo](http://alexandrebarros.com/global/escrow.png)</p>
+<p align="center">
+  ![Logo](http://alexandrebarros.com/global/escrow.png)
+</p>
   
 # About Escrow Pattern
 
