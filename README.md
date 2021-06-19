@@ -1,8 +1,7 @@
-![Logo](https://ipfs.io/ipfs/QmbV9PXkZGq7kKdS7xh2jR2wSddBq492besbAXFu1emX3B?filename=blockchain.png)
-
 # Escrow Smart Contract
-
 Design Patterns for Blockchain
+
+![Logo](http://alexandrebarros.com/global/escrow.png)
 
 # About Escrow Pattern
 
