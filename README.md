@@ -2,7 +2,7 @@
 Design Patterns for Blockchain
 
 <p align="center">
-  ![Logo](http://alexandrebarros.com/global/escrow.png)
+![Logo](http://alexandrebarros.com/global/escrow.png)
 </p>
   
 # About Escrow Pattern
