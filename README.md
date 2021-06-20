@@ -1,8 +1,8 @@
 # Escrow Smart Contract
 
-![Logo](http://alexandrebarros.com/global/escrow.png)
-
 Design Patterns for Blockchain
+
+![Logo](http://alexandrebarros.com/global/escrow.png)
 
 # About Escrow Pattern
 
@@ -50,10 +50,10 @@ This projects utilizes a Role-based access control pattern.
 
 ## Smart contract
 
-- Use RBAC pattern
-- Make parties payable
-- Agent can release or revert
-- Fixed fee for agent
+- [x] Use RBAC pattern
+- [x] Make parties payable
+- [x] Agent can release or revert
+- [x] Fixed fee for agent
 
 ## RBAC Pattern
 
