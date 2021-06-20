@@ -1,6 +1,6 @@
-![Logo](https://ipfs.io/ipfs/QmbV9PXkZGq7kKdS7xh2jR2wSddBq492besbAXFu1emX3B?filename=blockchain.png)
-
 # Escrow Smart Contract
+
+![Logo](http://alexandrebarros.com/global/escrow.png)
 
 Design Patterns for Blockchain
 
@@ -55,7 +55,29 @@ This projects utilizes a Role-based access control pattern.
 - Agent can release or revert
 - Fixed fee for agent
 
-## Web interface
+## RBAC Pattern
+
+Role-based access control (RBAC) is a method of restricting network access based on the roles of individual users within an enterprise. RBAC lets employees have access rights only to the information they need to do their jobs and prevents them from accessing information that doesn't pertain to them.
+
+## Instructions
+
+Using Remix IDE (https://remix.ethereum.org/)
+
+1. To start a transaction, an escrow agent (e.g.: accounts[0]), deploy the Smart Contract informing:
+
+- Buyer's address (e.g.: accounts[1])
+- Seller's address (e.g.: accounts[2])
+- The value of the transaction in Ethers (e.g.: 25)
+
+2. Change to the Buyer's account, select a amount corresponding to the price of the product and call BuyerSendPayment() function. Once the transaction is made, a 1 Eth fee is transfered to the escrow agent and the rest will stay locked in the valt (smart contract);
+
+3. Change to the Seller's account then call SellerClaimPayment(). This simulate the moment the Seller delivered the product to the Buyer;
+
+4. Return to the Buyer's account. Now you can choose if you received the product and then call BuyerConfirmDeliver() function or if you had problems, just call BuyerDenyDeliver(). If you confirm that you received the product, the vault will release the funds to the seller otherwise, the escrow agent will need to decide if he will release it, calling AgentConfirmTransaction(), or not, calling AgentCancelTransaction(), depending of the case;
+
+Only the escrow agent can verify the vault balance using VaultBalance().
+
+## Roadmap: Web interface
 
 - Website represents the seller
 - Buyer interface
@@ -108,7 +130,7 @@ In the console we run compile and then migrate. Compilation generates the contra
 
 The Truffle console also exposes contract abstractions and web3.js if we want to manually interact with our contracts after deployment.
 
-## Authors
+## Author
 
 - [@AleRapchan](https://www.github.com/AleRapchan)
 
